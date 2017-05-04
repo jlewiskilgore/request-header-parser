@@ -1,0 +1,13 @@
+{
+  "name": "request-header-parser",
+  "version": "1.0.0",
+  "description": "A request header parser",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "J Lewis Kilgore",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
