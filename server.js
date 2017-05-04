@@ -2,9 +2,17 @@ var express = require('express')
 var app = express();
 
 app.get('/', function(req, res) {
-	res.send(
-		'Request Header Parser'
-	);
+	var userIP = null;
+	var userLanguage = null;
+	var userOS = null;
+
+	var result = {
+		"ipAddress": userIP,
+		"language": userLanguage,
+		"operatingSystem": userOS
+	};
+
+	res.json(result);
 });
 
 app.listen(process.env.PORT || 8080, function() {
