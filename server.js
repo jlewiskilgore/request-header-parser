@@ -2,7 +2,7 @@ var express = require('express')
 var app = express();
 
 app.get('/', function(req, res) {
-	var userIP = req.ip;
+	var userIP = req.ip.split(':ffff:')[1];
 	var userLanguage = req.headers['accept-language'].split(',')[0];
 	var userOS = req.headers['user-agent'].split('(')[1].split(')')[0];
 
